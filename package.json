@@ -1,0 +1,22 @@
+{
+  "name": "heroku-phantomjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://schme16:pokemon1@github.com/schme16/heroku-phantomjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schme16/heroku-phantomjs/issues"
+  },
+  "homepage": "https://github.com/schme16/heroku-phantomjs#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
