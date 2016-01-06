@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://schme16:pokemon1@github.com/schme16/heroku-phantomjs.git"
   },
+
+  "engines": {
+    "node": "5.3.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
