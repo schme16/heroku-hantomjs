@@ -1,11 +1,20 @@
-express = require('express')
-exec = require('child_process').exec
-app = express()
+var express = require('express');
+var app = express();
+
+app.set('port', (process.env.PORT || 5000));
+
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 
 
-app.get('/', function (req, res) {
-	exec('phantom -v', function function_name (err, a, b, c) {
-		res.json([err, a, b, c])
-	})
-})
-app.listen(process.env.PORT || 1337)
